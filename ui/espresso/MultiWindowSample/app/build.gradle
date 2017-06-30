@@ -3,6 +3,8 @@ plugins {
 }
 apply plugin: 'com.android.application'
 
+com.android.ddmlib.DdmPreferences.setTimeOut(100000)
+
 android {
     compileSdkVersion 24
     buildToolsVersion rootProject.buildToolsVersion
